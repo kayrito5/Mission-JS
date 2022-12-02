@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les conditions</title>
+</head>
+
+<body>
+
+    <script>        
+        let age = prompt('Quel âge as-tu?');
+        let prenom = prompt("Quel est ton prénom?");
+
+
+        while (age.trim().length == 0 ) {
+            alert(`Tu n'as pas d'âge ??`)
+            age = prompt("QUEL EST TON PUTAIN D'AGE ?");
+        }
+        while (prenom.trim().length == 0 ) {
+                alert(`Tu n'as pas de prénom ??`)
+                prenom = prompt("QUEL EST TON PUTAIN DE PRENOM ?");
+        }
+        if (age < 18) {
+            console.log(`Non non ${prenom} , tu n'as que ${age} ans! Tu es encore trop jeune pour ça!!`);
+        }
+        else if (age == 18) {
+            console.log(`Bonjour ${prenom} , je vois que tu as ${age} ans! Tu es juste majeur!!`);
+        }
+        else if (age > 18) {
+            console.log('C\'est bon, c\'est bon ' + prenom + ', tu as ' + age + ' ans... Tu commences à te faire vieux…');
+        }
+
+
+        //Ecrire les conditions ici.
+        //Pour afficher un message à l'écran, vous pouvez utiliser la méthode alert().
+
+
+    </script>
+</body>
+
+</html>
