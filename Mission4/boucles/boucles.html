@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les boucles</title>
+</head>
+
+<body>
+
+    <script>
+
+        let fruits = ["banane", "pastèque", "melon", "fraise", "cerise", "pomme", "poire"];
+        let semaine = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
+
+        let j = 6
+
+        for (let i = 0; i < 7; i++) {
+            console.log(`Le fruit du ${semaine[i]} est : ${fruits[i]}`);
+        }
+        while (j >= 0){
+            console.log(`Le fruit du ${semaine[j]} est : ${fruits[j]}`);
+            j -= 1;
+        }
+        //Ecrire ici la première boucle for affichant la phrase comprenant le fruit et le jour dans l'ordre croissant
+
+
+        //Ecrire ici la seconde boucle while affichant la phrase comprenant le fruit et le jour mais en sens inverse 
+
+    </script>
+</body>
+
+</html>
