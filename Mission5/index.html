@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let cochon1 = {
+            prenom: "Riri",
+            caractere: "Brave",
+            maison: "Paille",
+            superficie: "49 m2",
+            fenetre: "Oui"
+        }
+        let cochon2 = {
+            prenom: "Fifi",
+            caractere: "Courageux",
+            maison: "Bois",
+            superficie: "44 m2",
+            fenetre: "Oui"
+        }
+        let cochon3 = {
+            prenom: "Loulou",
+            caractere: "Peureux",
+            maison: "Pierre",
+            superficie: "40 m2",
+            fenetre: "Non"
+        }
+
+        cochons = [cochon1, cochon2, cochon3]
+        let conteur = 1;
+
+        cochons.forEach(function(cochon){
+            console.log(`******* Cochon ${conteur} *******`);
+            console.log("Prénom : " + cochon.prenom);
+            console.log("Caractère : " + cochon.caractere);
+            console.log("Maison en : " + cochon.maison);
+            console.log("Superficie de la maison : " + cochon.superficie);
+            console.log("Maison avec fenêtre ? " + cochon.fenetre);
+            conteur += 1;
+        });
+
+
+
+    </script>
+</body>
+</html>
