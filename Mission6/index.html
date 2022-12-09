@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function operation (a,b,c){
+        let result = (parseInt(a) + parseInt(b)) / parseInt(c);
+        return result;
+    }
+    for (let i = 0; i < 6; i++){
+        let nb1 = prompt('Entrer un nombre : ');
+        let nb2 = prompt('Entrer un deuxième nombre : ');
+        let div = prompt('Entrer un diviseur : ');
+
+        while (nb1.trim().length === 0 ) {
+            alert(`Tu sais pas ce qu'est un nombre ?`);
+            nb1 = prompt('Entrer un nombre : ');
+        }
+        while (nb2.trim().length === 0 ) {
+            alert(`Tu sais pas ce qu'est un nombre ?`)
+            nb2 = prompt('Entrer un deuxième nombre : ');
+        }
+        while (div.trim().length === 0 || div === "0"){
+            alert('On ne peut PAS diviser par 0');
+            div = prompt('Entrer un diviseur : ');
+        }
+        let resultat = operation(nb1, nb2, div);
+        alert(`Le résultat est ${resultat}`);
+    }
+</script>
+
+</body>
+</html>
